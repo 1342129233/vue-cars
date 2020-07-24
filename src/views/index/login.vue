@@ -27,7 +27,7 @@ export default {
             methods: 'POST',
             params: userInfo
         })
-        .then((data)=> {
+        .then(({data})=> {
             console.log(data)
         })
     },

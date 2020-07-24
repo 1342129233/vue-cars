@@ -67,7 +67,7 @@ module.exports = {
     // }
     proxy: {
       '/_api': {
-        target: 'https://dev2.hse365.cc',
+        target: 'https://dev2.hse365.cc/_api',
         ws: true,
         changeOrigin: true,
         pathRewrite: {
