@@ -7,14 +7,23 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/Index",
+    path: "/",
     name: "Index",
     component: Home
   },
   {
-    path: "/",
-    name: "Login",
-    component: Login
+    path: '/Login',
+    name: 'Login',
+    hidden: true,
+    component: Login,
+    meta: {
+      title: '登录'
+    }
+  },
+  {
+    path: '*',
+    component: () => import('@/views/error-page/404'),
+    hidden: true
   }
 ];
 
