@@ -17,7 +17,6 @@ export default {
     return {
       map: null,
       zoom: 12,
-      center: [116.404765, 39.918052],
       events: {}
     };
   },
@@ -25,7 +24,8 @@ export default {
     lazyAMapApiLoaderInstance.load().then(() => {
       // your code ...
       this.map = new AMap.Map("amapContainer", {
-        center: new AMap.LngLat(116.404765, 39.918052)
+        center: [116.404765, 39.918052],
+        zoom: this.zoom // 初始化地图层级
       });
     });
   }

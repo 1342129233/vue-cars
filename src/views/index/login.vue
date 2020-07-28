@@ -11,26 +11,26 @@ export default {
   data() {
     return {
       loginForm: {
-        username: '',
-        password: ''
+        username: "",
+        password: ""
       }
     };
   },
   methods: {
-    tijiao() { // post('/_api/login', this.loginForm)
-        let userInfo = {
-            'username': this.loginForm.username,
-            'password': this.loginForm.password
-        }
-        this.$axios({
-            url: '/_api/login',
-            methods: 'POST',
-            params: userInfo
-        })
-        .then(({data})=> {
-            console.log(data)
-        })
-    },
+    tijiao() {
+      // post('/_api/login', this.loginForm)
+      let userInfo = {
+        username: this.loginForm.username,
+        password: this.loginForm.password
+      };
+      this.$axios({
+        url: "/_api/login",
+        methods: "POST",
+        params: userInfo
+      }).then(({ data }) => {
+        console.log(data);
+      });
+    }
   }
 };
 </script>

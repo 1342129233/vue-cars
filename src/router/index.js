@@ -12,19 +12,19 @@ const routes = [
     component: Home
   },
   {
-    path: '/Login',
-    name: 'Login',
+    path: "/Login",
+    name: "Login",
     hidden: true,
     component: Login,
     meta: {
-      title: '登录'
+      title: "登录"
     }
-  },
-  {
-    path: '*',
-    component: () => import('@/views/error-page/404'),
-    hidden: true
   }
+  // {
+  //   path: '*',
+  //   component: () => import('@/views/error-page/404'),
+  //   hidden: true
+  // }
 ];
 
 const router = new VueRouter({

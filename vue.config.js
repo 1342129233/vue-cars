@@ -51,9 +51,9 @@ module.exports = {
   pwa: {},
   // webpack-dev-server  相关配置
   devServer: {
-    open: false,  // 编译完成后是否自动打开网页
-    host: 'localhost',  // 指定使用地址, localhost:0.0.0.0 表示可以被外界访问
-    port: 8081,  // 访问端口
+    open: false, // 编译完成后是否自动打开网页
+    host: "localhost", // 指定使用地址, localhost:0.0.0.0 表示可以被外界访问
+    port: 8081, // 访问端口
     https: false, // 编译失败时刷新页面
     hotOnly: true,
     // proxy: {
@@ -66,12 +66,12 @@ module.exports = {
     //     }
     // }
     proxy: {
-      '/_api': {
-        target: 'https://dev2.hse365.cc/_api',
+      "/_api": {
+        target: "https://dev2.hse365.cc/_api",
         ws: true,
         changeOrigin: true,
         pathRewrite: {
-          '^/_api': ''
+          "^/_api": ""
         }
       }
     }

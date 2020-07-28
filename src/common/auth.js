@@ -1,31 +1,38 @@
-import Cookies from 'js-cookie'
+import Cookies from "js-cookie";
 // import Mock from 'mockjs'
 
-const TokenKey = 'token'
-const refreshTokenKey = 'refresh-token'
+const TokenKey = "token";
+const refreshTokenKey = "refresh-token";
 
 function getToken() {
-  return Cookies.get(TokenKey)
+  return Cookies.get(TokenKey);
 }
 
 function setToken(token) {
-  return Cookies.set(TokenKey, token)
+  return Cookies.set(TokenKey, token);
 }
 
 function removeToken() {
-  return Cookies.remove(TokenKey)
+  return Cookies.remove(TokenKey);
 }
 
 function getRefreshToken() {
-  return Cookies.get(refreshTokenKey)
+  return Cookies.get(refreshTokenKey);
 }
 
 function setRefreshToken(token) {
-  return Cookies.set(refreshTokenKey, token)
+  return Cookies.set(refreshTokenKey, token);
 }
 
 function removeRefreshToken() {
-  return Cookies.remove(refreshTokenKey)
+  return Cookies.remove(refreshTokenKey);
 }
 
-export { getToken, setToken, removeToken, getRefreshToken, setRefreshToken, removeRefreshToken }
+export {
+  getToken,
+  setToken,
+  removeToken,
+  getRefreshToken,
+  setRefreshToken,
+  removeRefreshToken
+};
