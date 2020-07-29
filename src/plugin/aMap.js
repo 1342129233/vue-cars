@@ -1,15 +1,16 @@
 import Vue from "vue";
 // 高德地图
 // 引入vue-amap
-import AMap from "vue-amap";
-Vue.use(AMap);
+import VueMap from "vue-amap";
+Vue.use(VueMap);
 
 // 初始化vue-amap
-AMap.initAMapApiLoader({
+VueMap.initAMapApiLoader({
   // 高德的key
   key: "3d627d81a151f0c1ebf4e4c17e7847c0",
   // 插件集合 （插件按需引入）
   plugin: [
+    "Amap.map",
     "AMap.Autocomplete",
     "AMap.PlaceSearch",
     "AMap.Scale",

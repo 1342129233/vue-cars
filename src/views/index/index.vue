@@ -1,34 +1,20 @@
 <template>
   <div class="amap-wrap">
-    <el-amap
-      vid="amapContainer"
-      :zoom="zoom"
-      :center="center"
-      :events="events"
-    ></el-amap>
+    <!-- 地图 -->
+    <Map />
+    <!-- dom渲染 -->
+    <!-- 会员 -->
   </div>
 </template>
 <script>
-// import { AMapManager, lazyAMapApiLoaderInstance } from "vue-amap";
-import { lazyAMapApiLoaderInstance, AMap } from "vue-amap";
+import Map from "../amap/index";
 export default {
   name: "Index",
+  components: { Map },
   data() {
-    return {
-      map: null,
-      zoom: 12,
-      events: {}
-    };
+    return {};
   },
-  mounted() {
-    lazyAMapApiLoaderInstance.load().then(() => {
-      // your code ...
-      this.map = new AMap.Map("amapContainer", {
-        center: [116.404765, 39.918052],
-        zoom: this.zoom // 初始化地图层级
-      });
-    });
-  }
+  mounted() {}
 };
 </script>
 <style lang="scss">

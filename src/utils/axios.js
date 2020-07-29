@@ -1,5 +1,5 @@
 import axios from "axios";
-import QS from "qs";
+import qs from "qs";
 import store from "@/store";
 import router from "@/router";
 import defaultConfig from "@/config";
@@ -18,10 +18,10 @@ class HttpRequest {
           ? "https://dev2.hse365.cc"
           : this.baseUrl, // 区分开发还是生产环境
       transformRequest: function(data) {
-        return QS.stringify(data); // 将字符串结构成对象形式
+        return qs.stringify(data); // 将字符串结构成对象形式
       },
       paramsSerializer: function(params) {
-        return Qs.strinfify(params);
+        return qs.strinfify(params);
       }
     };
     return config;
