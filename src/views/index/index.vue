@@ -7,7 +7,7 @@
     <!-- 导航 -->
     <Navbar />
     <!-- 会员 -->
-    <div id="children-view" :class="{open: show === 'true'}">
+    <div id="children-view" :class="{ open: show === 'true' }">
       <router-view />
     </div>
   </div>
@@ -15,21 +15,19 @@
 <script>
 import Map from "../amap/index";
 import Cars from "../cars/index";
-import Navbar from "@c/navbar"
+import Navbar from "@c/navbar";
 export default {
   name: "Index",
   components: { Map, Cars, Navbar },
   data() {
-    return {
-      
-    };
+    return {};
   },
   computed: {
     show() {
       const router = this.$route;
-      return router.name === "Index" ? "false" : "true"
+      return router.name === "Index" ? "false" : "true";
     }
-  },
+  }
 };
 </script>
 <style lang="scss">
@@ -41,11 +39,11 @@ export default {
   z-index: 101;
   width: 418px;
   background-color: #34393f;
-  -webkit-transition: all .3s ease 0s;
-  -moz-transition: all .3s ease 0s;
-  -ms-transition: all .3s ease 0s;
-  -o-transition: all .3s ease 0s;
-  transition: all .3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   &.open {
     right: 0;
   }
