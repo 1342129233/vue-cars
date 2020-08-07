@@ -1,0 +1,9 @@
+i[class^='icon'] {  // 获取类名为icon 的 i 标签
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $color-main;
+  display:inline-block;
+  background-repeat: no-repeat;
+}
+// .icon-help {background-image: url(~@/assets/images/.icon-help.png);}
