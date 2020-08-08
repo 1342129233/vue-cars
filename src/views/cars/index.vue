@@ -2,7 +2,7 @@
   <div class="cars-wrap">
     <div class="cars-swiper-wrap">
       <swiper :options="swiperOption">
-        <Swiper-slide><CarsItem height='600px' /></Swiper-slide>
+        <Swiper-slide><CarsItem height="600px"/></Swiper-slide>
         <Swiper-slide><CarsItem /></Swiper-slide>
         <Swiper-slide><CarsItem /></Swiper-slide>
         <Swiper-slide><CarsItem /></Swiper-slide>
@@ -15,7 +15,7 @@
   </div>
 </template>
 <script>
-import CarsItem from '@c/carsList';
+import CarsItem from "@c/carsList";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/swiper-bundle.css";
 export default {
@@ -26,8 +26,8 @@ export default {
         slidesPerView: 3,
         spaceBetween: 30,
         navigation: {
-          nextEl: '.swiper-button-prev',
-          prevEl: '.swiper-button-prev'
+          nextEl: ".swiper-button-prev",
+          prevEl: ".swiper-button-prev"
         }
       }
     };

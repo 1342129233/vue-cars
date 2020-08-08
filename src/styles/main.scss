@@ -1,3 +1,27 @@
 @import "./normalize.scss";
 @import "./sassConfig.scss";
 @import "./icon.scss";
+
+/* color */
+.color-main { color: $color-main; }
+
+/* text-align */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* float */
+.pull-right { float: right; }
+.pull-left { float: left; }
+
+/* font-size */
+.fs-24 {
+  font-size: 24px;
+}
+
+/* position */
+.p-r { position: relative; }
+.p-a { position: absolute; }
+
+/* clearfix */
+.clearfix { @extend %clearfix; }

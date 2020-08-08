@@ -1,8 +1,8 @@
 $color-main: #34393f;
-$color-blue: #00a3ff;
+$color-blur: #00a3ff;
 
 // 清楚浮动
-@mixin learfix {
+%clearfix {
     &:after {
         clear: both;
         content: '.';
@@ -14,6 +14,7 @@ $color-blue: #00a3ff;
     *height: 1%;
 }
 
+/* 属性前端 */
 @mixin webkit($type, $value) {
   -webkit-#{$type}: $value;
   -moz-#{$type}: $value;

@@ -41,8 +41,8 @@
     }
     &:hover {
       &:after {
-        border-left: 3px solid $color-blue;
-        border-top: 3px solid $color-blue;
+        border-left: 3px solid $color-blur;
+        border-top: 3px solid $color-blur;
       }
     }
   }
@@ -59,8 +59,8 @@
     }
     &:hover {
       &:after {
-        border-right: 3px solid $color-blue;
-        border-top: 3px solid $color-blue;
+        border-right: 3px solid $color-blur;
+        border-top: 3px solid $color-blur;
       }
     }
   }
